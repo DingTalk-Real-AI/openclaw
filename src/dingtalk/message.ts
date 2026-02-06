@@ -52,6 +52,7 @@ type DingTalkPayload = Record<string, unknown> & {
   messageId?: string;
 };
 
+/** Simplified logger interface compatible with DingTalk message processing. */
 type DingTalkLogger = {
   info?: (message: string) => void;
   warn?: (message: string) => void;
